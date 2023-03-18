@@ -1,0 +1,83 @@
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background: gold;
+    color: darkviolet;
+  } 
+
+  :root {
+    background-color: darkviolet;
+    background-image: conic-gradient(blueviolet, darkviolet);
+    color: gold;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  ::selection {
+    background: darkviolet;
+    color: gold;
+  }
+
+  :root {
+    background-color: gold;
+    background-image: conic-gradient(gold, mediumspringgreen);
+    color: darkviolet;
+  }
+}
+
+:any-link {
+  color: inherit;
+  text-decoration-style: dotted;
+}
+
+:hover {
+  text-decoration-style: solid;
+}
+
+:focus {
+  outline: thick double;
+  text-decoration-style: double;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: max(2em, 5vmin + 2vmax);
+  line-height: 2;
+}
+
+body {
+  margin: auto;
+  overflow-wrap: anywhere;
+}
+
+article {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+h1 {
+  display: flex;
+  font-family: sans-serif;
+  font-sizez: 1.618em;
+  margin: auto;
+}
+
+p {
+  font-family: monospace;
+  margin: auto;
+  writing-mode: vertical-rl;
+}
+
+a {
+  display: inline-flex;
+}
+
+em {
+  font-style: unset;
+  font-weight: bold;
+}
